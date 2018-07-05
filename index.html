@@ -8,7 +8,7 @@
 
 <style>
 @font-face {
-	font-family: Elsie; src: url('ElsieSwashCaps-Regular.ttf'); 
+	font-family: Elsie; src: url('ElsieSwashCaps-Black.ttf'); 
 } 
 
 body {
@@ -23,9 +23,45 @@ img {
 	/*border: 4px white solid;*/
 }
 
+#nav {
+    border: 5px solid #ccc;
+    border-width:5px 1;
+	border-right-color: black;
+	border-left-color: black;
+	border-top-color: white;
+	background-color: black;
+    list-style:none;
+    margin:10;
+
+    padding: 0;
+    text-align:center;
+	
+}
+
+
+#nav li {
+    display:inline;
+
+}
+
+#nav a{
+    display:inline-block;
+    padding:20px;
+	text-decoration: none;
+	font-family: Elsie;
+	color: white;
+	font-size: 24px;
+	letter-spacing: 0.1em;
+}
+
+#nav a:hover {
+	background-color: #F0F;
+}
+
+/*
 .nav{
     border: 20px solid #ccc;
-    border-width:5px 0;
+    border-width:2px 0;
 	border-top-color: white;
     list-style:none;
     margin:10;
@@ -36,68 +72,67 @@ img {
 }
 .nav li{
     display:inline;
+	border-right: 2px solid white;
 }
+
+.nav li:last-child a {
+    border-right: none;
+}
+
 .nav a{
     display:inline-block;
     padding:20px;
 	text-decoration: none;
-	/*font-weight: 525;*/
+	font-weight: 525;
 	font-family: Elsie;
 	color: white;
-	font-size: 18px;
+	font-size: 21px;
 	letter-spacing: 0.6em;
 }
 
-.nav a:hover {
+.nav a:hover 
 	background-color: #F0F;
-	padding: 16px;
-	font-size: 22px
 }
 
-/*
-#nav {
-    list-style-type: none;
-    margin-left: auto;;
-	margin-right: auto;
-	width: 450px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
+<ul class="nav">*/
 
-li {
-    float: left;
-}
 
-#nav a {
-    display: block;
-    color: #F0F;
-    text-align: center;
-	width: 150px;
-    padding: 14px 16px;
-    text-decoration: none;
-	font-weight:900;
-}
-
-#nav a:hover {
-    background-color: white;
-	<div align="center"></div>
-}*/
 </style>
+<script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+			 
+              document.getElementById("img").src = images[x];
+			
+          }
 
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "Images/one.jpg";
+          images[1] = "Images/two.jpg";
+          images[2] = "Images/three.jpg";
+      </script>
 </head>
 
-<body>
+<body onload="startTimer()">
 
 <h1><img src="Images/logo2.png" alt="mainLogo" width="450" height="214" class="center" /></h1>
 
-<ul class="nav">
-  <li><a href="/Ferretti-Hair-Design/"><b>HOME</a></li>
-  <li><a href="/services/">SERVICES</a></li>
-  <li><a href="/work/">WORK</a></li>
-  <li><a href="/clients/">LOCATION</a></li>
-  <li><a href="/contact/">CONTACT</b></a></li>
+<ul id="nav">
+  <li><a href="/Ferretti-Hair-Design/">Home</a></li>
+  <li><a href="/services/">Services</a></li>
+  <li><a href="/book/">Book Now</a></li>
+  <li><a href="/location/">Location</a></li>
 </ul>
-
+<p>&nbsp;</p>
+<p><img src="Images/three.jpg" name="img" id="img" /></p>
 </body>
 </html>
