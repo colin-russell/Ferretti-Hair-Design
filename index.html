@@ -13,25 +13,73 @@ body {
 	/*background-color: #000000;*/
 	background-color: #666;
 }
-img {
+
+* {
+	box-sizing: border-box;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 1px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#logo {
 	display: block;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	/*margin-left: 2.5%;*/
 	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+}
+
+#facebookIcon {
+	display: block;
+	width: 10%;
+	height: auto;
+	margin-top: 20%;
+	margin-right: 20%;
+}
+
+#instagramIcon {
+	display: block;
+	width: 10%;
+	height: auto;
+	margin-top: 20%;
+	margin-right: 10%;
+}
+
+#mainImg {
+	border: 0.25vw solid #ccc;
+	display: block;
+	margin-top: 3%;
+	margin-left: 5%;
 	margin-right: auto;/*border: 4px white solid;*/
-	max-height: 100%;
-	max-width: 100%;
+	/*max-height: 90%;
+	max-width: 90%;*/
+	height: auto;
+	width: 40%;
 	
 }
 #nav {
-	border: 5px solid #ccc;
-	border-width: 5px 1;
+	border: solid #ccc;
+	border-width: 0.25vw 0;
 	border-right-color: black;
 	border-left-color: black;
-	border-top-color: white;
+	
 	background-color: black;
 	list-style: none;
+	list-style-type: none;
 	margin: 10;
-	/*margin-left: 100px;
-	margin-right: 100px;*/
+	/*margin-left: 10%;
+	margin-right: 10%;*/
 	padding: 0;
 	text-align: center;
 }
@@ -40,11 +88,15 @@ img {
 }
 #nav a {
 	display: inline-block;
-	padding: 20px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
 	text-decoration: none;
+	background-color: #333;
 	font-family: Elsie;
 	color: white;
-	font-size: 24px;
+	font-size: 1.5vw;
 	letter-spacing: 0.1em;
 }
 #nav a:hover, a:active {
@@ -52,8 +104,8 @@ img {
 }
 #container {
 	width = 960px;
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 10%;
+	margin-right: 10%;
 	background-color: black;
 	margin: 2 auto;
 }
@@ -95,22 +147,23 @@ img {
 }
 
 <ul class="nav">*/
-</style>
+
+      </style>
       <script type = "text/javascript">
           function displayNextImage() {
               x = (x === images.length - 1) ? 0 : x + 1;
 			 
-              document.getElementById("img").src = images[x];
+              document.getElementById("mainImg").src = images[x];
 			
           }
 
           function displayPreviousImage() {
               x = (x <= 0) ? images.length - 1 : x - 1;
-              document.getElementById("img").src = images[x];
+              document.getElementById("mainImg").src = images[x];
           }
 
           function startTimer() {
-              setInterval(displayNextImage, 3000);
+              setInterval(displayNextImage, 6000);
           }
 
           var images = [], x = -1;
@@ -121,17 +174,32 @@ img {
       </head>
       
       <body onload="startTimer()">
+      
       <div id="container">
-<h1><img src="Images/logo2.png" alt="mainLogo" width="450" height="214" class="center" /></h1>
+<div class="row">
+  <div class="column" style="background-color: black;">
+   
+  </div>
+  <div class="column" style="background-color:black;">
+    <img src="Images/logo2.png" alt="mainLogo"  class="center" id="logo"/>
+  </div>
+  <div class="column" style="background-color: black;">
+   <img src="Images/facebook.png" id="facebookIcon" align="right"/>
+   <img src="Images/instagram.png" id="instagramIcon" align="right"/>
+  </div>
+</div>
+
+
 <ul id="nav">
-        <li><a href="/Ferretti-Hair-Design/">Home</a></li>
+  <li><a href="/Ferretti-Hair-Design/">Home</a></li>
         <li><a href="/services/">Services</a></li>
         <li><a href="/book/">Book Now</a></li>
         <li><a href="/location/">Location</a></li>
       </ul>
 
-<p><font color= white>Mobile & IN Home Service</font></p>
-<p><img src="Images/three.jpg" name="img" id="img" /></p>
+<p><font color= white> </font></p>
+<p><img src="Images/three.jpg" name="img" id="mainImg" /></p>
+
 </body>
-      </div>
+</div>
 </html>
