@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ferretti Hair Design - Home</title>
+<link rel="icon" href="favicon.ico">
+
+<style>
+@font-face {
+	font-family: Elsie;
+	src: url('fonts/ElsieSwashCaps-Black.ttf');
+}
+@font-face {
+	font-family: ElsieRegular;
+	src: url('fonts/ElsieSwashCaps-Regular.ttf');
+}
+@font-face {
+	font-family: SansationLight;
+	src: url('fonts/Oranienbaum.ttf');
+}
+@font-face {
+	font-family: SansationRegular;
+	src: url('fonts/Oranienbaum.ttf');
+}
+body {
+	background-color: #666;
+	width: 1250px;
+	margin: auto;
+}
+* {
+	box-sizing: border-box;
+}
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 1px;
+}
+.columnTwo {
+	float: left;
+	width: 50%;
+	padding: 1px;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#phone {
+	display: block;
+	margin-left: 100px;
+	margin-top: 75px;
+	font-size: 32px;
+	font-family: ElsieRegular;
+	color: white;
+}
+#logo {
+	display: block;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	pointer-events: none;
+}
+#facebookIcon {
+	display: block;
+	height: auto;
+	width: 50px;
+	margin-right: 100px;
+	margin-top: 75px;
+}
+#instagramIcon {
+	display: block;
+	height: auto;
+	margin-right: 50px;
+	margin-top: 75px;
+	width: 50px;
+}
+#nav {
+	border: solid #ccc;
+	border-width: 0.25vw 0;
+	border-right-color: black;
+	border-left-color: black;
+	background-color: black;
+	list-style: none;
+	list-style-type: none;
+	margin: 10;
+	padding: 0;
+	text-align: center;
+}
+#nav li {
+	display: inline;
+}
+#nav a {
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	background-color: #333;
+	font-family: Elsie;
+	color: white;
+	font-size: 32px;
+	letter-spacing: 0.1em;
+}
+#nav a:hover, a:active {
+	background-color: #F0F;
+}
+#container {
+	border-radius: 20px;
+	display: block;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	background-color: black;
+}
+#textContainer {
+	display: block;
+	margin-left: auto;
+	margin-top: 125px;
+	padding-top: 40px;
+	margin-right: 50px;
+	height: 300px;
+	vertical-align: middle;
+	text-align: center;
+	font-family: SansationLight;
+	line-height: 40px;
+	font-size: 29px;
+}
+#imageContainer {
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	display: block;
+	margin-top: 50px;
+	margin-left: 30px;
+	width: 500px;
+	height: 600px;
+}
+.cover {
+	object-fix: contain;
+}
+#slider {
+	opacity: 1;
+	transition: opacity 1s;
+	object-fit: cover;
+	border: 2px solid #ccc;
+	border-radius: 20px;
+	width: 500px;
+	height: 600px;
+	pointer-events: none;
+}
+#slider.fadeOut {
+	opacity: 0;
+}
+</style>
+<script type = "text/javascript">
+      var imgArray = [
+    'images/one.jpg',
+	'images/two.jpg',
+	'images/three.jpg',
+    'images/four.jpg',
+    'images/five.jpg'],
+    curIndex = 0;
+    imgDuration = 3000;
+
+function slideShow() {
+    document.getElementById('slider').className += "fadeOut";
+    setTimeout(function() {
+        document.getElementById('slider').src = imgArray[curIndex];
+        document.getElementById('slider').className = "";
+    },1000);
+    curIndex++;
+    if (curIndex == imgArray.length) { curIndex = 0; }
+    setTimeout(slideShow, imgDuration);
+}
+slideShow();
+</script>
+</head>
+
+<body onload="slideShow()">
+<div id="container">
+<div class="row">
+  <div class="column" style="background-color: transparent;"> <a href="tel:14165688433" style="text-decoration: none"> <font id="phone">(416)568-8433</font></a></div>
+  <div class="column" style="background-color: transparent;"> <a href="/Ferretti-Hair-Design/"> <img src="images/logo2.png" alt="mainLogo"  class="center" id="logo"/></a></div>
+  <div class="column" style="background-color: transparent;"> <a href="https://www.facebook.com/FerrettiHairDesign/" target="_blank"> <img src="images/facebook.png" id="facebookIcon" align="right"/></a> <a href="https://www.instagram.com/ferrettihairdesign/" target="_blank"> <img src="images/instagram.png" id="instagramIcon" align="right"/></a></div>
+</div>
+<ul id="nav">
+  <li><a href="/Ferretti-Hair-Design/">Home</a></li>
+  <li><a href="/Ferretti-Hair-Design/services.html">Services</a></li>
+  <li><a href="/Ferretti-Hair-Design/location.html">Location</a></li>
+</ul>
+<div class="row">
+  <div class="columnTwo">
+    <div id="imageContainer"><img id="slider" src="images/five.jpg"></div>
+  </div>
+  <div class="columnTwo">
+    <div id="textContainer"><font color=white> Ferretti Hair Design is a home based hair studio that also provides mobile hair services to the Bathurst Manor and surrounding areas. Ferretti Hair Design keeps current with the latest trends and provides full service at affordable prices.</font></div>
+    <div id="textContainer" style="margin-top:0"><font color=white> Please call ahead to book an appointment!</font></div>
+  </div>
+</div>
+<p><font color=white style="font-size: 12px; font-family: ElsieRegular;">
+  <center>
+    <br />
+    <br />
+    <br />
+    &copy 2018 Ferretti Hair Design
+  </center>
+  </font></p>
+<br />
+</body>
+</div>
+</html>
