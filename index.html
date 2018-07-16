@@ -27,7 +27,9 @@
 	
 	body {
 		background-color: #666;
-		width: 1250px;
+		/*width: 1250px;*/
+		max-width: 1200px;
+		min-width: 1150px;
 		margin: auto;
 	}
 	
@@ -99,17 +101,17 @@
 		padding: 0;
 		text-align: center;
 	}
+	
 	#nav li {
 		display: inline;
 	}
+	
 	#nav a {
 		display: inline-block;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		padding-left: 20px;
 		padding-right:20px;
-		
-		
 		text-decoration: none;
 		background-color: #333;
 		font-family: Elsie;
@@ -117,6 +119,7 @@
 		font-size: 32px;
 		letter-spacing: 0.1em;
 	}
+	
 	#nav a:hover, a:active {
 		background-color: #F0F;
 	}
@@ -133,7 +136,7 @@
 	#textContainer {
 		display: block;
 		margin-left: auto;
-		margin-top: 100px;
+		margin-top: 125px;
 		padding-top: 40px;
 		margin-right: 50px;
 		height: 300px;
@@ -142,20 +145,72 @@
 		font-family: SansationLight;
 		line-height: 40px;
 		font-size: 29px;
-}
-	
+	}
+	/*
 	#mainImg {
 		border: 0.1vw solid #ccc;
 		border-radius: 20px;
 		display: block;
 		margin-top: 50px;
 		margin-left: 50px;
-		height: 400px;
-			pointer-events: none;
+		width: 500px;
+		height: 600px;
+		object-fit: cover;
+		pointer-events: none;
+	}*/
+	
+	#imageContainer {
+		border: 1px solid #ccc;
+		border-radius: 20px;
+		display: block;
+		margin-top: 50px;
+		margin-left: 50px;
+		width: 500px;
+		height: 600px;
+	}
+	
+	.cover {
+		object-fix: contain;
+	}
+	#slider {
+		opacity:1;
+		transition: opacity 1s; 
+		object-fit: cover;
+		border: 2px solid #ccc;
+		border-radius: 20px;
+		width: 500px;
+		height: 600px;
+		pointer-events: none;
+	}
+
+	#slider.fadeOut {
+		opacity:0;
 	}
 
       </style>
       <script type = "text/javascript">
+      var imgArray = [
+    'images/one.jpg',
+	'images/two.jpg',
+	'images/three.jpg',
+    'images/four.jpg',
+    'images/five.jpg'],
+    curIndex = 0;
+    imgDuration = 3000;
+
+function slideShow() {
+    document.getElementById('slider').className += "fadeOut";
+    setTimeout(function() {
+        document.getElementById('slider').src = imgArray[curIndex];
+        document.getElementById('slider').className = "";
+    },1000);
+    curIndex++;
+    if (curIndex == imgArray.length) { curIndex = 0; }
+    setTimeout(slideShow, imgDuration);
+}
+slideShow();
+</script>
+      <!--<script type = "text/javascript">
           function displayNextImage() {
               x = (x === images.length - 1) ? 0 : x + 1;
 			 
@@ -176,10 +231,12 @@
           images[0] = "images/one.jpg";
           images[1] = "images/two.jpg";
           images[2] = "images/three.jpg";
-      </script>
+		  images[3] = "images/four.jpg";
+		  images[4] = "images/five.jpg";
+      </script>-->
 </head>
       
-<body onload="startTimer()">
+<body onload="slideShow()">
 <div id="container">
 
     <div class="row">
@@ -199,15 +256,15 @@
     <ul id="nav">
         <li><a href="/Ferretti-Hair-Design/">Home</a></li>
         <li><a href="/Ferretti-Hair-Design/services.html">Services</a></li>
-        <li><a href="/Ferretti-Hair-Design/book.html">Book Online</a></li>
         <li><a href="/Ferretti-Hair-Design/location.html">Location</a></li>
 	</ul>
     
     <div class="row">
-    	<div class="columnTwo"><img src="images/three.jpg" name="img" id="mainImg" /></div>
+    	<div class="columnTwo"><div id="imageContainer"><img id="slider" src="images/five.jpg"></div></div>
         <div class="columnTwo">
-          <div id="textContainer"><font color=white >
+          <div id="textContainer"><font color=white>
           Ferretti Hair Design is a home based hair studio that also provides mobile hair services to the Bathurst Manor and surrounding areas. Ferretti Hair Design keeps current with the latest trends and provides full service at affordable prices.</font></div>
+          <div id="textContainer" style="margin-top:0"><font color=white> Please call ahead to book an appointment!</font></div>
         
         </div>
     </div>
