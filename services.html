@@ -1,340 +1,556 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<link rel="shortcut icon" href="favicon.ico"/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Ferretti Hair Design - Services</title>
- <style>
-	@font-face {
-		font-family: Elsie;
-		src: url('fonts/ElsieSwashCaps-Black.ttf');
-	}
-	
-	@font-face {
-		font-family: ElsieRegular;
-		src: url('fonts/ElsieSwashCaps-Regular.ttf');
-	}
-	
-	@font-face {
-		font-family: SansationLight;
-		src: url('fonts/Oranienbaum.ttf');
-	}
-	
-	@font-face {
-		font-family: SansationRegular;
-		src: url('fonts/Oranienbaum.ttf');
-	}
-	
-	body {
-		background-color: #666;
-		width: 1250px;
-		margin: auto;
-	}
-	
-	* {
-		box-sizing: border-box;
-	}
-	
-	.column {
-		float: left;
-		width: 33.33%;
-		padding: 1px;
-	}
-	
-	.columnTwo {
-		float: left;
-		width: 50%;
-		padding: 1px;	
-	}
-	.row:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-	
-	#phone {
-		display: block;
-		margin-left: 100px;
-		margin-top: 75px;
-		font-size: 32px;
-		font-family: ElsieRegular;
-		color: white;
-	}
-	#logo {
-		display: block;
-		padding-top: 0%;
-		padding-bottom: 0%;
-		margin-left: auto;
-		margin-right: auto;
-		width: 300px;
-		pointer-events: none;
-	}
-	
-	#facebookIcon {
-		display: block;
-		height: auto;
-		width: 50px;
-		margin-right: 100px;
-		margin-top: 75px;
-		
-	}
-	
-	#instagramIcon {
-		display: block;
-		height: auto;
-		margin-right: 50px;
-		margin-top: 75px;
-		width: 50px;
-	}
-	
-	#nav {
-		border: solid #ccc;
-		border-width: 0.25vw 0;
-		border-right-color: black;
-		border-left-color: black;
-		background-color: black;
-		list-style: none;
-		list-style-type: none;
-		margin: 10;
-		padding: 0;
-		text-align: center;
-	}
-	#nav li {
-		display: inline;
-	}
-	#nav a {
-		display: inline-block;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		padding-left: 20px;
-		padding-right:20px;
-		
-		
-		text-decoration: none;
-		background-color: #333;
-		font-family: Elsie;
-		color: white;
-		font-size: 32px;
-		letter-spacing: 0.1em;
-	}
-	#nav a:hover, a:active {
-		background-color: #F0F;
-	}
-	
-	#container {
-		border-radius: 20px;
-		display: block;
-		margin: auto;
-		margin-top: 25px;
-		margin-bottom: 25px;
-		background-color: black;
-	}
-	
-	.textContainer {
-		display: block;
-		margin-top: 15px;
-		margin-bottom: 15px;
-		padding-top: 15px;
-		margin-left: 250px;
-		margin-right: auto;
-		height: 100px;
-		width: 600px;
-		vertical-align: middle;
-		text-align: left;
-		font-family: Oranienbaum;
-		line-height: 125x;
-	}
+      <head>
+      <link rel="shortcut icon" href="favicon.ico"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Ferretti Hair Design - Services</title>
+      <style>
 
-	.imgContainer {
-		display: block;
-		padding-top: 15px;
-		float: right;
-		margin-right: 250px;
-		width: 100px;
-		height: auto;
-	}
+@font-face {
+	font-family: Elsie;
+	src: url('fonts/ElsieSwashCaps-Black.ttf');
+}
+@font-face {
+	font-family: ElsieRegular;
+	src: url('fonts/ElsieSwashCaps-Regular.ttf');
+}
+@font-face {
+	font-family: SansationLight;
+	src: url('fonts/Oranienbaum.ttf');
+}
+@font-face {
+	font-family: SansationRegular;
+	src: url('fonts/Oranienbaum.ttf');
+}
+body {
+	background-color: #666;
+	/*width: 1250px;*/
+	width: 1250px;
+	margin: auto;
+}
+* {
+	box-sizing: border-box;
+}
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 1px;
+}
+.columnTwo {
+	float: left;
+	width: 50%;
+	padding: 1px;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#phone {
+	display: block;
+	margin-left: 100px;
+	margin-top: 75px;
+	font-size: 32px;
+	font-family: ElsieRegular;
+	color: white;
+}
+#logo {
+	display: block;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	pointer-events: none;
+}
+#facebookIcon {
+	display: block;
+	height: auto;
+	width: 50px;
+	margin-right: 100px;
+	margin-top: 75px;
+}
+#instagramIcon {
+	display: block;
+	height: auto;
+	margin-right: 50px;
+	margin-top: 75px;
+	width: 50px;
+}
+#nav {
+	border: solid #ccc;
+	border-width: 0.25vw 0;
+	border-right-color: black;
+	border-left-color: black;
+	background-color: black;
+	list-style: none;
+	list-style-type: none;
+	margin: 10;
+	padding: 0;
+	text-align: center;
+}
+#nav li {
+	display: inline;
+}
+#nav a {
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	background-color: #333;
+	font-family: Elsie;
+	color: white;
+	font-size: 32px;
+	letter-spacing: 0.1em;
+}
+#nav a:hover, a:active {
+	background-color: #F0F;
+}
+#container {
+	border-radius: 20px;
+	display: block;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	background-color: black;
+}
+.textContainer {
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 15px;
+	margin-left: 250px;
+	margin-right: auto;
+	height: 100px;
+	width: 600px;
+	vertical-align: middle;
+	text-align: left;
+	font-family: Oranienbaum;
+	line-height: 125x;
+}
+.imgContainer {
+	display: block;
+	padding-top: 15px;
+	float: right;
+	margin-right: 250px;
+	width: 100px;
+	height: auto;
+}
 
-      </style>
+</style>
+
 </head>
 
-      
-<body onload="startTimer()">
-
+<body onload="slideShow()">
 <div id="container">
+<div class="row">
+  <div class="column" style="background-color: transparent;"> <a href="tel:14165688433" style="text-decoration: none"> <font id="phone">(416)568-8433</font></a></div>
+  <div class="column" style="background-color: transparent;"> <a href="/Ferretti-Hair-Design/"> <img src="images/logo2.png" alt="mainLogo"  class="center" id="logo"/></a></div>
+  <div class="column" style="background-color: transparent;"> <a href="https://www.facebook.com/FerrettiHairDesign/" target="_blank"> <img src="images/facebook.png" id="facebookIcon" align="right"/></a> <a href="https://www.instagram.com/ferrettihairdesign/" target="_blank"> <img src="images/instagram.png" id="instagramIcon" align="right"/></a></div>
+</div>
+<ul id="nav">
+  <li><a href="/Ferretti-Hair-Design/">Home</a></li>
+  <li><a href="/Ferretti-Hair-Design/services.html">Services</a></li>
+  <li><a href="/Ferretti-Hair-Design/location.html">Location</a></li>
+</ul>
 
-    <div class="row">
-    <div class="column" style="background-color: transparent;">
-            <a href="tel:14165688433" style="text-decoration: none">
-            <font id="phone">(416)568-8433</font></a></div>
-        <div class="column" style="background-color: transparent;">
-            <a href="/Ferretti-Hair-Design/">
-            <img src="images/logo2.png" alt="mainLogo"  class="center" id="logo"/></a></div>
-        <div class="column" style="background-color: transparent;">
-            <a href="https://www.facebook.com/FerrettiHairDesign/" target="_blank">
-            <img src="images/facebook.png" id="facebookIcon" align="right"/></a>
-            <a href="https://www.instagram.com/ferrettihairdesign/" target="_blank">
-            <img src="images/instagram.png" id="instagramIcon" align="right"/></a></div>
-    </div>
-    
-    <ul id="nav">
-        <li><a href="/Ferretti-Hair-Design/">Home</a></li>
-        <li><a href="/Ferretti-Hair-Design/services.html">Services</a></li>
-        <li><a href="/Ferretti-Hair-Design/location.html">Location</a></li>
-	</ul>
 
- 	<div style="margin:auto; margin-top: 50px; text-align: center; font-family: ElsieRegular;  width: 200px;"> 
-    	<font color=white style="font-size: 46px;">Services</font>
-    </div>
-    
-    <div style="margin:auto; margin-top: 25px; margin-bottom: 15px; padding-bottom: 25px; text-align: center; font-family: Oranienbaum; border-bottom: solid white 0.1vw; width: 75%;"> 
-    	<i><font color=white style="font-size: 26px;">All services include stress relieve scalp massage and blowdry</font></i>
-    </div>
-    <font color=white style="font-size: 32px;">
-    
-    <div class="row">
-    	<div class="columnTwo">
-            <div class="textContainer"><b>Split End Treatment</b><br /><font style="font-size: 26px;">$20.00
-            </div></font>
-        </div>
+<div style="margin:auto; margin-top: 50px; text-align: center; font-family: ElsieRegular;  width: 200px;"> <font color=white style="font-size: 46px;">Services</font> </div>
+<div style="margin:auto; margin-top: 25px; margin-bottom: 15px; padding-bottom: 25px; text-align: center; font-family: Oranienbaum; border-bottom: solid white 0.1vw; width: 75%;"> <i><font color=white style="font-size: 26px;">All services include stress relieve scalp massage and blowdry</font></i> </div>
+<font color=white style="font-size: 32px;">
+<div class="row">
         <div class="columnTwo">
-        	<img class="imgContainer" src='images/splitEnd.jpg' />
-        </div>
-    </div>
-    
-        <hr color=white width=65% style="border-width: 1px;"/>
+    <div class="textContainer"><b>Split End Treatment</b><br />
+            <font style="font-size: 26px;">$20.00 </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/splitEnd.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row" style="margin-top: 15px;">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Conditioning Treatments</b><br />
+            <font style="font-size: 26px;">$25.00 and up </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/conditioning.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Balyeage</b><br />
+            <font style="font-size: 26px;">$120.00 and up </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/balyeage.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Permanent Wave</b><br />
+            <font style="font-size: 26px;">$125.00 and up depending on length of hair </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/permanentWave.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Full Head Hightlights</b><br />
+            <font style="font-size: 26px;">$120.00 and up depending on length of hair </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/fullHead.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Half Head Highlights</b><br />
+            <font style="font-size: 26px;">$90.00 and up depending on length of hair </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/halfHead.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Partial Highlights</b><br />
+            <font style="font-size: 26px;">$70.00 </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/partialHighlights.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Single Process Colour</b><br />
+            <font style="font-size: 26px;">$55.00 </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/singleProcess.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Updo</b><br />
+            <font style="font-size: 26px;">Starting at $50.00 </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/updo.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Shampoo and Blowdry</b><br />
+            <font style="font-size: 26px;">$25.00 short hair | $35.00 long hair </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/shampooAndBlowdry.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row" style="margin-top: 15px;">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Women's Haircut</b><br />
+            <font style="font-size: 26px;">$55.00 </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/womans.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row" style="margin-top: 15px;">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Men's Haircut</b><br />
+            <font style="font-size: 26px;">$25.00 </div>
+    </font> </div>
+        <div class="columnTwo"> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row" style="margin-top: 15px;">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Children's Haircut (10 and under)</b><br />
+            <font style="font-size: 26px;">$20.00 </div>
+    </font> </div>
+        <div class="columnTwo"> </div>
+      </div>
 
-    <div class="row" style="margin-top: 15px;">
-    	<div class="columnTwo">
-            <div class="textContainer"><b>Conditioning Treatments</b><br /><font style="font-size: 26px;">$25.00 and up 
-            </div></font>
-        </div>
-        <div class="columnTwo">
-        	<img class="imgContainer" src='images/conditioning.jpg' />
-        </div>
-    </div>
-    
-    <hr color=white width=65% style="border-width: 1px;"/>
-    <div class="row">
-    	<div class="columnTwo">
-            <div class="textContainer"><b>Balyeage</b><br /><font style="font-size: 26px;">$120.00 and up
-            </div></font>
-        </div>
-        <div class="columnTwo">
-        	<img class="imgContainer" src='images/balyeage.jpg' />
-        </div>
-    </div>
-    
-    <hr color=white width=65% style="border-width: 1px;"/>
-    <div class="row">
-    	<div class="columnTwo">
-            <div class="textContainer"><b>Permanent Wave</b><br /><font style="font-size: 26px;">$125.00 and up depending on length of hair
-            </div></font>
-        </div>
-        <div class="columnTwo">
-        	<img class="imgContainer" src='images/permanentWave.jpg' />
-        </div>
-    </div>
-    
-    <hr color=white width=65% style="border-width: 1px;"/>
-    <div class="row">
-    	<div class="columnTwo">
-            <div class="textContainer"><b>Full Head Hightlights</b><br /><font style="font-size: 26px;">$120.00 and up depending on length of hair
-            </div></font>
-        </div>
-        <div class="columnTwo">
-        	<img class="imgContainer" src='images/fullHead.jpg' />
-        </div>
-    </div>
-    
-    <hr color=white width=65% style="border-width: 1px;"/>
-    <div class="row">
-    	<div class="columnTwo">
-            <div class="textContainer"><b>Half Head Highlights</b><br /><font style="font-size: 26px;">$90.00 and up depending on length of hair
-            </div></font>
-        </div>
-        <div class="columnTwo">
-        	<img class="imgContainer" src='images/halfHead.jpg' />
-        </div>
-    </div>
-    
-    <hr color=white width=65% style="border-width: 1px;"/>
-    <div class="row">
-    	<div class="columnTwo">
-            <div class="textContainer"><b>Partial Highlights</b><br /><font style="font-size: 26px;">$70.00
-            </div></font>
-        </div>
-        <div class="columnTwo">
-        	<img class="imgContainer" src='images/partialHighlights.jpg' />
-        </div>
-    </div>
-    
-    <hr color=white width=65% style="border-width: 1px;"/>
-    <div class="row">
-    	<div class="columnTwo">
-            <div class="textContainer"><b>Single Process Colour</b><br /><font style="font-size: 26px;">$55.00
-            </div></font>
-        </div>
-        <div class="columnTwo">
-        	<img class="imgContainer" src='images/singleProcess.jpg' />
-        </div>
-    </div>
-    
-    <hr color=white width=65% style="border-width: 1px;"/>
-    <div class="row">
-    	<div class="columnTwo">
-            <div class="textContainer"><b>Updo</b><br /><font style="font-size: 26px;">Starting at $50.00
-            </div></font>
-        </div>
-        <div class="columnTwo">
-        	<img class="imgContainer" src='images/updo.jpg' />
-        </div>
-    </div>
-    
-    <hr color=white width=65% style="border-width: 1px;"/>
-    <div class="row">
-    	<div class="columnTwo">
-            <div class="textContainer"><b>Shampoo and Blowdry</b><br /><font style="font-size: 26px;">$25.00 short hair | $35.00 long hair
-            </div></font>
-        </div>
-        <div class="columnTwo">
-        	<img class="imgContainer" src='images/shampooAndBlowdry.jpg' />
-        </div>
-    </div>
-
-    <hr color=white width=65% style="border-width: 1px;"/>    
-    <div class="row" style="margin-top: 15px;">
-    	<div class="columnTwo">
-            <div class="textContainer"><b>Women's Haircut</b><br /><font style="font-size: 26px;">$55.00 
-            </div></font>
-        </div>
-        <div class="columnTwo">
-        	<img class="imgContainer" src='images/womans.jpg' />
-        </div>
-    </div>
-    
-    <hr color=white width=65% style="border-width: 1px;"/>    
-    <div class="row" style="margin-top: 15px;">
-    	<div class="columnTwo">
-            <div class="textContainer"><b>Men's Haircut</b><br /><font style="font-size: 26px;">$25.00 
-            </div></font>
-        </div>
-        <div class="columnTwo">
-        </div>
-    </div>
-    
-    <hr color=white width=65% style="border-width: 1px;"/>    
-    <div class="row" style="margin-top: 15px;">
-    	<div class="columnTwo">
-            <div class="textContainer"><b>Children's Haircut (10 and under)</b><br /><font style="font-size: 26px;">$20.00 
-            </div></font>
-        </div>
-        <div class="columnTwo">
-        </div>
-    </div>
-    
-	<p><font color=white style="font-size: 12px; font-family: ElsieRegular;"><center><br /><br />&copy 2018 Ferretti Hair Design</center></font></p><br />
-
+<p><font color=white style="font-size: 12px; font-family: ElsieRegular;">
+  <center>
+    <br />
+    <br />
+    <br />
+    &copy 2018 Ferretti Hair Design
+  </center>
+  </font></p>
+<br />
 </body>
 </div>
 </html>
 
+
+
+
+
+
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+      <link rel="shortcut icon" href="favicon.ico"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Ferretti Hair Design - Services</title>
+      <style>
+@font-face {
+	font-family: Elsie;
+	src: url('fonts/ElsieSwashCaps-Black.ttf');
+}
+@font-face {
+	font-family: ElsieRegular;
+	src: url('fonts/ElsieSwashCaps-Regular.ttf');
+}
+@font-face {
+	font-family: SansationLight;
+	src: url('fonts/Oranienbaum.ttf');
+}
+@font-face {
+	font-family: SansationRegular;
+	src: url('fonts/Oranienbaum.ttf');
+}
+body {
+background-color: #666;
+	/*width: 1250px;*/
+	width: 1200px;
+	margin: auto;
+}
+* {
+	box-sizing: border-box;
+}
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 1px;
+}
+.columnTwo {
+	float: left;
+	width: 50%;
+	padding: 1px;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#phone {
+	display: block;
+	margin-left: 100px;
+	margin-top: 75px;
+	font-size: 32px;
+	font-family: ElsieRegular;
+	color: white;
+}
+#logo {
+	display: block;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	pointer-events: none;
+}
+#facebookIcon {
+	display: block;
+	height: auto;
+	width: 50px;
+	margin-right: 100px;
+	margin-top: 75px;
+}
+#instagramIcon {
+	display: block;
+	height: auto;
+	margin-right: 50px;
+	margin-top: 75px;
+	width: 50px;
+}
+#nav {
+	border: solid #ccc;
+	border-width: 0.25vw 0;
+	border-right-color: black;
+	border-left-color: black;
+	background-color: black;
+	list-style: none;
+	list-style-type: none;
+	margin: 10;
+	padding: 0;
+	text-align: center;
+}
+#nav li {
+	display: inline;
+}
+#nav a {
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	background-color: #333;
+	font-family: Elsie;
+	color: white;
+	font-size: 32px;
+	letter-spacing: 0.1em;
+}
+#nav a:hover, a:active {
+	background-color: #F0F;
+}
+#container {
+	border-radius: 20px;
+	display: block;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	background-color: black;
+}
+.textContainer {
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 15px;
+	margin-left: 250px;
+	margin-right: auto;
+	height: 100px;
+	width: 600px;
+	vertical-align: middle;
+	text-align: left;
+	font-family: Oranienbaum;
+	line-height: 125x;
+}
+.imgContainer {
+	display: block;
+	padding-top: 15px;
+	float: right;
+	margin-right: 250px;
+	width: 100px;
+	height: auto;
+}
+</style>
+      </head>
+
+      <body onload="startTimer()">
+<div id="container">
+<div class="row">
+        <div class="column" style="background-color: transparent;"> <a href="tel:14165688433" style="text-decoration: none"> <font id="phone">(416)568-8433</font></a></div>
+        <div class="column" style="background-color: transparent;"> <a href="/Ferretti-Hair-Design/"> <img src="images/logo2.png" alt="mainLogo"  class="center" id="logo"/></a></div>
+        <div class="column" style="background-color: transparent;"> <a href="https://www.facebook.com/FerrettiHairDesign/" target="_blank"> <img src="images/facebook.png" id="facebookIcon" align="right"/></a> <a href="https://www.instagram.com/ferrettihairdesign/" target="_blank"> <img src="images/instagram.png" id="instagramIcon" align="right"/></a></div>
+      </div>
+<ul id="nav">
+        <li><a href="/Ferretti-Hair-Design/">Home</a></li>
+        <li><a href="/Ferretti-Hair-Design/services.html">Services</a></li>
+        <li><a href="/Ferretti-Hair-Design/location.html">Location</a></li>
+      </ul>
+<div style="margin:auto; margin-top: 50px; text-align: center; font-family: ElsieRegular;  width: 200px;"> <font color=white style="font-size: 46px;">Services</font> </div>
+<div style="margin:auto; margin-top: 25px; margin-bottom: 15px; padding-bottom: 25px; text-align: center; font-family: Oranienbaum; border-bottom: solid white 0.1vw; width: 75%;"> <i><font color=white style="font-size: 26px;">All services include stress relieve scalp massage and blowdry</font></i> </div>
+<font color=white style="font-size: 32px;">
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Split End Treatment</b><br />
+            <font style="font-size: 26px;">$20.00 </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/splitEnd.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row" style="margin-top: 15px;">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Conditioning Treatments</b><br />
+            <font style="font-size: 26px;">$25.00 and up </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/conditioning.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Balyeage</b><br />
+            <font style="font-size: 26px;">$120.00 and up </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/balyeage.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Permanent Wave</b><br />
+            <font style="font-size: 26px;">$125.00 and up depending on length of hair </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/permanentWave.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Full Head Hightlights</b><br />
+            <font style="font-size: 26px;">$120.00 and up depending on length of hair </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/fullHead.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Half Head Highlights</b><br />
+            <font style="font-size: 26px;">$90.00 and up depending on length of hair </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/halfHead.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Partial Highlights</b><br />
+            <font style="font-size: 26px;">$70.00 </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/partialHighlights.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Single Process Colour</b><br />
+            <font style="font-size: 26px;">$55.00 </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/singleProcess.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Updo</b><br />
+            <font style="font-size: 26px;">Starting at $50.00 </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/updo.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Shampoo and Blowdry</b><br />
+            <font style="font-size: 26px;">$25.00 short hair | $35.00 long hair </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/shampooAndBlowdry.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row" style="margin-top: 15px;">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Women's Haircut</b><br />
+            <font style="font-size: 26px;">$55.00 </div>
+    </font> </div>
+        <div class="columnTwo"> <img class="imgContainer" src='images/womans.jpg' /> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row" style="margin-top: 15px;">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Men's Haircut</b><br />
+            <font style="font-size: 26px;">$25.00 </div>
+    </font> </div>
+        <div class="columnTwo"> </div>
+      </div>
+<hr color=white width=65% style="border-width: 1px;"/>
+<div class="row" style="margin-top: 15px;">
+        <div class="columnTwo">
+    <div class="textContainer"><b>Children's Haircut (10 and under)</b><br />
+            <font style="font-size: 26px;">$20.00 </div>
+    </font> </div>
+        <div class="columnTwo"> </div>
+      </div>
+<p><font color=white style="font-size: 12px; font-family: ElsieRegular;">
+  <center>
+    <br />
+    <br />
+    &copy 2018 Ferretti Hair Design
+  </center>
+  </font></p>
+<br />
+</body>
+      </div>
+</html>
+-->
