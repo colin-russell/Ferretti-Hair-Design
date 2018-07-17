@@ -24,22 +24,17 @@
 }
 body {
 	background-color: #666;
-	max-width: 1250px;
-	min-width: 1100px;
+	width: 600px;
 	margin: auto;
 }
 * {
 	box-sizing: border-box;
 }
 .column {
-	float: left;
-	width: 33.33%;
-	padding: 1px;
+	
 }
 .columnTwo {
-	float: left;
-	width: 50%;
-	padding: 1px;
+	
 }
 .row:after {
 	content: "";
@@ -47,12 +42,20 @@ body {
 	clear: both;
 }
 #phone {
-	display: block;
-	margin-left: 100px;
-	margin-top: 75px;
+	
 	font-size: 32px;
 	font-family: ElsieRegular;
 	color: white;
+	
+	position: absolute;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	margin-top: 150px;
+	margin-bottom: 5px;
+	width: 300px;
+	margin-left: 150px;
+	margin-right: 150px;
+	text-align: center;
 }
 #logo {
 	display: block;
@@ -67,15 +70,15 @@ body {
 	display: block;
 	height: auto;
 	width: 50px;
-	margin-right: 100px;
-	margin-top: 75px;
+	margin-right: 225px;
+	margin-top: 50px;
 }
 #instagramIcon {
 	display: block;
 	height: auto;
-	margin-right: 50px;
-	margin-top: 75px;
 	width: 50px;
+	margin-left: 0px;
+	margin-top: 50px;
 }
 #nav {
 	border: solid #ccc;
@@ -135,63 +138,61 @@ body {
 	display: block;
 	margin-top: 50px;
 	margin-left: 50px;
-	width: 500px;
-	height: 600px;
+	width: 400px;
+	height: 480px;
 }
 .cover {
 	object-fit: cover;
 }
 #slider {
+	width: 400px;
+	height: 480px;
 	opacity: 1;
 	transition: opacity 1s;
 	object-fit: cover;
 	border: 2px solid #ccc;
 	border-radius: 20px;
-	width: 500px;
-	height: 600px;
 	pointer-events: none;
 }
 #slider.fadeOut {
 	opacity: 0;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (min-width: 750px) {
     body {
-        max-width: 600px;
-		min-width: 600px;
+		width: 1250px;
     }
 	#phone {
-	position: absolute;
-	padding-top: 0%;
-	padding-bottom: 0%;
-	margin-top: 150px;
-	margin-bottom: 5px;
-	width: 300px;
-	margin-left: 150px;
-	margin-right: 150px;
-	text-align: center;
+		text-align: left;
+	display: block;
+	margin-left: 100px;
+	margin-top: 75px;
 }
 	.column {
-	width: 100%;
+	float: left;
+	width: 33.33%;
+	padding: 1px;
 }
 .columnTwo {
-width: 100%;	
+float: left;
+	width: 50%;
+	padding: 1px;
 }
 #facebookIcon {
-	margin-right: 225px;
-	margin-top: 50px;
+	margin-right: 100px;
+	margin-top: 75px;
 }
 #instagramIcon {
-	margin-left: 0px;
-	margin-top: 50px;
+	margin-right: 50px;
+	margin-top: 75px;
 }
 #imageContainer {
-	width: 400px;
-	height: 480px;
+	width: 500px;
+	height: 600px;
 }
 #slider {
-	width: 400px;
-	height: 480px;
+	width: 500px;
+	height: 600px;
 }
 
 }
