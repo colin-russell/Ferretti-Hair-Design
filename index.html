@@ -24,11 +24,20 @@
 	font-family: SansationRegular;
 	src: url('fonts/Oranienbaum.ttf');
 }
+@font-face {
+	font-family: QuicksandBook;
+	src: url('fonts/Quicksand_Book.otf');
+}
+@font-face {
+	font-family: Frenchpress;
+	src: url('fonts/ModernSans.otf');
+}
 body {
-	background-color: #666;
+	background-color: #333;
 	width: 95%;
 	min-width: 600px;
 	margin: auto;
+	font-size: 20px;
 }
 * {
 	box-sizing: border-box;
@@ -41,14 +50,17 @@ body {
 	content: "";
 	display: table;
 	clear: both;
+	font-size: 20px;
 }
 #phone {
 	display: block;
 	font-size: 4vw;
 	font-family: ElsieRegular;
-	color: white;
+	font-family: Frenchpress;
+	letter-spacing: 2px;
+	color: #1F1F1F;
 	position: absolute;
-	padding-top: 0%;
+	padding-top: 2%;
 	padding-bottom: 0%;
 	margin-top: 25vw;
 	margin-bottom: 0px;
@@ -60,8 +72,8 @@ body {
 }
 #logo {
 	display: block;
-	padding-top: 0%;
-	padding-bottom: 0%;
+	padding-top: 5%;
+	padding-bottom: 10%;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50vw;
@@ -73,25 +85,25 @@ body {
 	height: auto;
 	width: 6vw;
 	margin-right: 41%;
-	margin-top: 10vw;
+	padding-top: 7%;
 }
 #instagramIcon {
 	/*display: block;*/
 	height: auto;
 	width: 6vw;
 	margin-right: 5%;
-	margin-top: 10vw;
 	margin-bottom: 3.5vw;
+	padding-top: 7%;
 }
 #nav {
-	border: solid #ccc;
+	border: solid #1F1F1F;
 	border-width: 0.25vw 0;
-	border-right-color: black;
-	border-left-color: black;
-	background-color: black;
+	border-right-color: #1F1F1F;
+	border-left-color: #1F1F1F;
+	background-color: #CCCCCC;
 	list-style: none;
 	list-style-type: none;
-	margin: 10;
+	margin: 0;
 	padding: 0;
 	text-align: center;
 }
@@ -100,28 +112,35 @@ body {
 }
 #nav a {
 	display: inline-block;
-	padding-top: 1vw;
+	border-top: solid #1F1F1F;
+	border-width: thin;
+	padding-top: 2vw;
 	padding-bottom: 1vw;
 	padding-left: 1.5vw;
 	padding-right: 1.5vw;
 	text-decoration: none;
-	background-color: #333;
-	font-family: Elsie;
-	color: white;
+	/*background-color: #FF88B5;*/
+	background-color: #FF88B5;
+	font-family: ElsieRegular;
+	font-family: Frenchpress;
+	color: #1F1F1F;
 	font-size: 5vw;
 	letter-spacing: 0.25em;
 }
 #nav a:hover, a:active {
-	background-color: #F0F;
+	background-color: #1F1F1F;
+	color: white;
 }
 #container {
 	min-width: 650px;
 	border-radius: 20px;
 	display: block;
 	margin: auto;
-	margin-top: 25px;
+	margin-top: 35px;
 	margin-bottom: 25px;
-	background-color: black;
+	background-color: #CCCCCC;
+	/*border: solid thick #88e1ff;*/
+	box-shadow: 0px 0px 50px #88e1ff;
 }
 #textContainer {
 	display: block;
@@ -132,19 +151,21 @@ body {
 	height: auto;
 	vertical-align: middle;
 	text-align: center;
-	font-family: SansationLight;
-	line-height: 1.3em;
-	font-size: 6vw;
+	color: #1F1F1F;
+	/*font-family: SansationLight;*/
+	font-family: Frenchpress;/*line-height: 1.3em;*/
+	/*font-size: 6vw;*/
 }
 #imageContainer {
-	border: 1px solid #ccc;
-	border-radius: 20px;
+	/*border: 1px solid #1F1F1F;
+	border-radius: 20px;*/
 	display: block;
-	margin-top: 50px;
+	margin-top: 70px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 80vw;
 	height: 96vw;
+	
 }
 .cover {
 	object-fit: cover;
@@ -153,17 +174,19 @@ body {
 	opacity: 1;
 	transition: opacity 1s;
 	object-fit: cover;
-	border: 2px solid #ccc;
+	border: 0px opacity 100s black;
 	border-radius: 20px;
 	pointer-events: none;
 	margin-left: auto;
 	margin-right: auto;
 	width: 80vw;
 	height: 96vw;
+	box-shadow: 0px 5px 25px #1F1F1F;
 }
 #slider.fadeOut {
 	opacity: 0;
 }
+ /*@media only screen and (min-width: 1000px) {*/
  @media only screen and (min-width: 1000px) {
 body {
 	width: 1250px;
@@ -211,6 +234,7 @@ body {
 	padding-left: 20px;
 	padding-right: 20px;
 	font-size: 32px;
+	font-size: 40px;
 }
 #slider {
 	width: 500px;
@@ -222,8 +246,7 @@ body {
 	padding-top: 40px;
 	margin-right: 50px;
 	height: 300px;
-	line-height: 40px;
-	font-size: 29px;
+	font-size: 32px;
 }
 }
 </style>
@@ -268,17 +291,19 @@ slideShow();
   <div class="column" style="background-color: transparent;"> <a href="https://www.facebook.com/officialFerrettiHairDesign/" target="_blank"> <img src="images/facebook.png" id="facebookIcon" align="right"/></a> <a href="https://www.instagram.com/ferrettihairdesignbymirella/" target="_blank"> <img src="images/instagram.png" id="instagramIcon" align="right"/></a></div>
 </div>
 <ul id="nav">
+  <b>
   <li><a href="/">Home</a></li>
   <li><a href="/services.html">Services</a></li>
   <li><a href="/location.html">Location</a></li>
+  </b>
 </ul>
 <div class="row">
   <div class="columnTwo">
     <div id="imageContainer"><img id="slider" src="images/five.jpg"></div>
   </div>
   <div class="columnTwo">
-    <div id="textContainer"><font color=white> Ferretti Hair Design is a home based hair studio that also provides mobile hair services to the Bathurst Manor and surrounding areas. Ferretti Hair Design keeps current with the latest trends and provides full service at affordable prices.</font></div>
-    <div id="textContainer" style="margin-top:1vw"><font color=white> Please call ahead to book an appointment!</font></div>
+    <div id="textContainer">Ferretti Hair Design is a home based hair studio that also provides mobile hair services to the Bathurst Manor and surrounding areas. Ferretti Hair Design keeps current with the latest trends and provides full service at affordable prices.</div>
+    <div id="textContainer" style="margin-top:1vw">Please call ahead to book an appointment!</font></div>
   </div>
 </div>
 <p><font color=white style="font-size: 12px; font-family: ElsieRegular;">
