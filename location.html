@@ -21,40 +21,57 @@
 	font-family: SansationRegular;
 	src: url('fonts/Oranienbaum.ttf');
 }
+@font-face {
+	font-family: QuicksandBook;
+	src: url('fonts/Quicksand_Book.otf');
+}
+@font-face {
+	font-family: Frenchpress;
+	src: url('fonts/ModernSans.otf');
+}
 body {
-	background-color: #666;
+	background-color: #333;
+	background-color: black;
 	width: 95%;
 	min-width: 600px;
 	margin: auto;
+	font-size: 20px;
 }
 * {
 	box-sizing: border-box;
 }
 .column {
-	
+}
+.columnTwo {
 }
 .row:after {
 	content: "";
 	display: table;
 	clear: both;
+	font-size: 20px;
 }
 #phone {
+	display: block;
 	font-size: 4vw;
 	font-family: ElsieRegular;
-	color: white;
+	font-family: Frenchpress;
+	letter-spacing: 2px;
+	color: #1F1F1F;
 	position: absolute;
-	padding-top: 0%;
+	/*padding-top: 2%;*/
 	padding-bottom: 0%;
 	margin-top: 25vw;
 	margin-bottom: 0px;
 	width: 95%;
-	min-width: 570px;
+	/*min-width: 570px;*/
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 }
 #logo {
 	display: block;
-	padding-top: 0%;
-	padding-bottom: 0%;
+	padding-top: 5%;
+	padding-bottom: 10%;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50vw;
@@ -62,29 +79,28 @@ body {
 	pointer-events: none;
 }
 #facebookIcon {
-	display: block;
+	/*display: block;*/
 	height: auto;
 	width: 6vw;
 	margin-right: 41%;
-	margin-top: 10vw;
+	/*padding-top: 7%;*/
 }
 #instagramIcon {
-	display: block;
+	/*display: block;*/
 	height: auto;
 	width: 6vw;
 	margin-right: 5%;
-	margin-top: 10vw;
 	margin-bottom: 3.5vw;
+	/*padding-top: 7%;*/
 }
 #nav {
-	border: solid #ccc;
-	border-width: 0.25vw 0;
-	border-right-color: black;
-	border-left-color: black;
-	background-color: black;
+	border: solid #1F1F1F;
+	border: solid #666;
+	border-width: 7px 0;
+	background-color: #CCCCCC;
 	list-style: none;
 	list-style-type: none;
-	margin: 10;
+	margin: 0;
 	padding: 0;
 	text-align: center;
 }
@@ -93,48 +109,66 @@ body {
 }
 #nav a {
 	display: inline-block;
-	padding-top: 1vw;
-	padding-bottom: 1vw;
 	padding-left: 1.5vw;
 	padding-right: 1.5vw;
 	text-decoration: none;
-	background-color: #333;
-	font-family: Elsie;
-	color: white;
+	/*background-color: #FF88B5;*/
+	background-color: #FF88B5;
+	font-family: ElsieRegular;
+	font-family: Frenchpress;
+	color: #1F1F1F;
 	font-size: 5vw;
 	letter-spacing: 0.25em;
 }
 #nav a:hover, a:active {
-	background-color: #F0F;
+	background-color: #1F1F1F;
+	color: white;
 }
 #container {
 	min-width: 650px;
 	border-radius: 20px;
+	border-radius: 40px;
 	display: block;
 	margin: auto;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	background-color: black;
+	margin-top: 35px;
+	margin-bottom: 15px;
+	background-color: #CCCCCC;
+	/*border: solid thick #88e1ff;*/
+	box-shadow: 0px 0px 50px #88e1ff;
+	box-shadow: 0px 0px 75px #88e1ff;
+}
+.horizontalRule {
+	width: 90%;
+	border-width: 0.2vw;
+	color: #1F1F1F;	
 }
 #textContainer {
+	margin-top: -75px;
+	padding-top: 40px;
+	height: 150px;
+	line-height: 40px;
+	font-size: 29px;
+	font-family: Frenchpress;
+	color: #1F1F1F;
+}
+.smallerFont {
+	font-size:3.5vw;
+}
+.imgContainer {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: -5vw;
+	padding-top: 15px;
+	float: right;
+	margin-right: 10%;
+	width: 100px;
 	height: auto;
-	vertical-align: middle;
-	text-align: center;
-	font-family: SansationLight;
-	line-height: 1.3em;
-	font-size: 4vw;
 }
 #titleText {
 	margin:auto; 
 	margin-top: 50px; 
 	text-align: center; 
-	font-family: ElsieRegular;
+	font-family: Frenchpress;
 	font-size: 7vw;
-	color: white;
+	color: #1F1F1F;
 	width: 100%;
 }
 #map {
@@ -142,7 +176,8 @@ body {
 	height: 65vw;
 	
 }
- @media only screen and (min-width: 1000px) {
+ /*@media only screen and (min-width: 1000px) {*/
+ @media only screen and (min-width: 1px) {
 body {
 	width: 1250px;
 }
@@ -151,27 +186,38 @@ body {
 	text-align: left;
 	display: block;
 	margin-left: 100px;
-	margin-top: 75px;
+	margin-top: 135px;
 	width: auto;
 }
 #logo {
 	width: 300px;
+	width: 350px;
 }
 .column {
 	float: left;
 	width: 33.33%;
 	padding: 1px;
 }
+.columnTwo {
+	float: left;
+	width: 50%;
+	padding: 1px;
+}
 #facebookIcon {
 	margin-right: 100px;
-	margin-top: 75px;
+	margin-top: 110px;
 	width: 50px;
 }
 #instagramIcon {
 	margin-right: 50px;
-	margin-top: 75px;
+	margin-top: 110px;
 	margin-bottom: 0px;
 	width: 50px;
+}
+#imageContainer {
+	width: 500px;
+	height: 600px;
+	margin-left: 50px;
 }
 #nav a {
 	padding-top: 10px;
@@ -180,13 +226,6 @@ body {
 	padding-right: 20px;
 	font-size: 32px;
 }
-#textContainer {
-	margin-top: -75px;
-	padding-top: 40px;
-	height: 150px;
-	line-height: 40px;
-	font-size: 29px;
-}
 #titleText {
 	font-size: 46px;
 }
@@ -194,15 +233,38 @@ body {
 	width: 733px;
 	height: 550px;
 }
+.horizontalRule {
+	width: 65%;
+	border-width: 1px;	
+}
+#textContainer {
+	margin-top: -75px;
+	padding-top: 40px;
+	height: 150px;
+	line-height: 40px;
+	font-size: 29px;
+}
+.smallerFont {
+	font-size: 26px;
+}
+.imgContainer {
+	display: block;
+	padding-top: 15px;
+	float: right;
+	margin-right: 250px;
+	width: 100px;
+	height: auto;
 }
 </style>
+</head>
+
       </head>
 
       <body onload="startTimer()">
 <div id="container">
 <div class="row">
         <div class="column" style="background-color: transparent;"> <a href="tel:14165688433" style="text-decoration: none"> <font id="phone">(416)568-8433</font></a></div>
-        <div class="column" style="background-color: transparent;"> <a href="/"> <img src="images/logo2.png" alt="mainLogo"  class="center" id="logo"/></a></div>
+        <div class="column" style="background-color: transparent;"> <a href="/"> <img src="images/logo.png" alt="mainLogo"  class="center" id="logo"/></a></div>
         <div class="column" style="background-color: transparent;"> <a href="https://www.facebook.com/officialFerrettiHairDesign/" target="_blank"> <img src="images/facebook.png" id="facebookIcon" align="right"/></a> <a href="https://www.instagram.com/ferrettihairdesignbymirella/" target="_blank"> <img src="images/instagram.png" id="instagramIcon" align="right"/></a></div>
       </div>
 <ul id="nav">
@@ -217,7 +279,7 @@ body {
         <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1386.4492802780233!2d-79.45994639384341!3d43.75707938782417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b320618aa81d5%3A0x266882c031dba700!2sBrighton+Ave+%26+Honiton+St%2C+Toronto%2C+ON!5e0!3m2!1sen!2sca!4v1531243443484" frameborder="0" style="border:0;" allowfullscreen></iframe>
       </center>
 <br />
-<p><font color=white style="font-size: 12px; font-family: ElsieRegular;">
+<p><font color=white style="font-size: 12px;">
   <center>
     <br />
     <div id="textContainer">Brighton Avenue (Bathurst Manor)<br />Toronto, Ontario M3H 4G3</div>
